@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+body{
+    background: linear-gradient(90deg, rgba(9, 9, 121, 0.555) 0%, rgba(0, 213, 255, 0.668) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#form{
+    background: linear-gradient(90deg,rgba(0,212,255,0.35340073529411764) 0%,rgba(9, 9, 121, 0.212)  79%);
+    border-radius: 40px;
+    width: 350px;
+    padding: 20px 40px;
+    border: 2px solid rgba(255, 255, 255, 0.449);
+}
+.form-control{
+    margin-bottom: 10px;
+    position: relative;
+}
+.form-control label{
+    display: block;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+.form-control input{
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 8px;
+    margin-top: 8px;
+    outline: none;
+    border: 2px solid rgb(220, 171, 171);
+}
+.form-control input:focus{
+    border: 2px solid #4d4a4a;
+}
+.form-control small{
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 4px;
+    display: block;
+    font-family: sans-serif;
+    font-weight: 400;
+    visibility: hidden;
+}
+.form-control.error small{
+    visibility: visible;
+}
+.form-control i{
+    position: absolute;
+    right: 12px;
+    top:34px;
+    visibility: hidden;
+}
+.form-control.success i.fa-circle-check {
+    color: #28a745;
+    visibility: visible;
+}
+.form-control.error i.fa-circle-exclamation {
+    color: #dc3545;
+    visibility: visible;
+}
+
+.form-control.success input{
+    border: 2px solid #28a745;
+}
+.form-control.error input{
+    border: 2px solid #dc3545;
+}
+
+/* sweet alert box */
+.sweet-alert{
+    width: 300px;
+    border-radius: 40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+}
+.sweet-alert h2{
+    color: white;
+}
+.sweet-alert p {
+    color: white;
+}
+.sweet-alert button {
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 100%) !important;
+}
+.sweet-alert .sa-icon.sa-success::before{
+    background-color: transparent;
+}
+.sweet-alert .sa-icon.sa-success::after{
+    background-color: transparent;
+}
+.sweet-alert .sa-icon.sa-success .sa-fix{
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
